@@ -146,101 +146,96 @@
 # check_password_strength
 
 
-class ATM:
-    def __init__(self):
-        self.balance = 1000
+# class ATM:
+#     def __init__(self):
+#         self.balance = 1000
     
-    def deposit(self):
-        amount = float(input("Enter deposit amount: "))
-        self.balance += amount
-        print(f"Deposited {amount}. New balance: {self.balance}")
+#     def deposit(self):
+#         amount = float(input("Enter deposit amount: "))
+#         self.balance += amount
+#         print(f"Deposited {amount}. New balance: {self.balance}")
     
-    def withdraw(self):
-        amount = float(input("Enter withdrawal amount: "))
-        if amount <= self.balance:
-            self.balance -= amount
-            print(f"Withdrew {amount}. New balance: {self.balance}")
-        else:
-            print("Insufficient funds.")
+#     def withdraw(self):
+#         amount = float(input("Enter withdrawal amount: "))
+#         if amount <= self.balance:
+#             self.balance -= amount
+#             print(f"Withdrew {amount}. New balance: {self.balance}")
+#         else:
+#             print("Insufficient funds.")
     
-    def check_balance(self):
-        print(f"Current balance: {self.balance}")
+#     def check_balance(self):
+#         print(f"Current balance: {self.balance}")
     
-def atm_simulation():
-    atm = ATM()
+# def atm_simulation():
+#     atm = ATM()
     
-    while True:
-        print("\nATM Menu: \n1. Deposit \n2. Withdraw \n3. Check Balance \n4. Exit")
-        choice = input("Choose an option: ")
+#     while True:
+#         print("\nATM Menu: \n1. Deposit \n2. Withdraw \n3. Check Balance \n4. Exit")
+#         choice = input("Choose an option: ")
         
-        if choice == "1":
-            atm.deposit()
-        elif choice == "2":
-            atm.withdraw()
-        elif choice == "3":
-            atm.check_balance()
-        elif choice == "4":
-            print("Thank you for using ATM.")
-            break
-        else:
-            print("Invalid option, please try again.")
+#         if choice == "1":
+#             atm.deposit()
+#         elif choice == "2":
+#             atm.withdraw()
+#         elif choice == "3":
+#             atm.check_balance()
+#         elif choice == "4":
+#             print("Thank you for operating with us.")
+#             break
+#         else:
+#             print("Invalid option, please try again.")
 
-atm_simulation()
-
-
+# atm_simulation()
 
 
+# import time
+# start_time=time.time()
+# typed_text=str(input("Start typing the word : "))
+# end_time=time.time()
+# time_taken=(end_time -start_time)/60.0
+# words=int(len(typed_text))
+# print(f"You have typed total {words} characters. ")
+# print(f"Total time taken {time_taken:.2f} min for typing")
+# wpm=words/time_taken
+# print(f"Your speed is {wpm:.2f} WPM")
 
 
+# import time
 
+# def wpm_calculator():
+#     # Sentence to type
+#     test_sentence = ("The sun was setting behind the mountains, casting a golden glow over the valley. A cool breeze rustled the leaves of the trees, creating a peaceful melody that filled the air. Birds flew across the sky, their wings cutting through the warm evening light.")
+#     print("Type the following sentence as fast and accurately as you can:\n")
+#     print(test_sentence)
+#     input("Press Enter when you are ready to start...")
 
+#     # Start timer
+#     start_time = time.time()
+#     typed_text = input("\nStart typing here:\n")
+#     end_time = time.time()
 
+#     # Calculate time taken
+#     time_taken = end_time - start_time
+#     time_in_minutes = time_taken / 60
 
+#     # Count words
+#     word_count = len(typed_text.split())
 
+#     # Calculate WPM
+#     wpm = word_count / time_in_minutes if time_in_minutes > 0 else 0
 
+#     # Calculate accuracy
+#     correct_chars = sum(1 for i, c in enumerate(typed_text) if i < len(test_sentence) and c == test_sentence[i])
+#     accuracy = (correct_chars / len(test_sentence)) * 100
 
+#     # Results
+#     print("\n--- Results ---")
+#     print(f"Time taken: {time_in_minutes:.2f} seconds")
+#     print(f"Your typing speed: {wpm:.2f} words per minute")
+#     print(f"Accuracy: {accuracy:.2f}%")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# # Run the program
+# wpm_calculator()
 
 
 
